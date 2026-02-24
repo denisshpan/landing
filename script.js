@@ -1,16 +1,16 @@
 const TRANSLATIONS = {
   es: {
     brandTitle: "Denis & Svetlana",
-    heroKicker: "Pareja aburridamente responsable",
-    heroTitle: "Buscamos un piso que ya haya sobrevivido a varios Erasmus",
+    heroKicker: "Pareja legal, casi sospechosamente",
+    heroTitle: "Buscamos piso sin drama, sin circo y sin temporada 2",
     heroSubtitle:
-      "Somos Denis (38) y Svetlana (37): sin hijos, sin mascotas y con más ganas de sofá que de discoteca. Si tu piso aguantó estudiantes, con nosotros va a descansar.",
+      "Somos Denis (38) y Svetlana (37): sin hijos, sin mascotas y con rutina de gente que paga facturas antes de que caduquen.",
     heroCtaPrimary: "Contactar con nosotros",
     heroCtaSecondary: "Ver qué buscamos",
     heroPhotoLabel: "Aquí irá nuestra foto juntos",
     aboutTitle: "Quiénes somos",
     aboutIntro:
-      "Pareja europea sin hijos ni mascotas: pagamos a tiempo, recogemos el baño y discutimos en voz baja. Casi aburrido, lo sabemos.",
+      "Pareja europea sin hijos ni mascotas: pagamos a tiempo, limpiamos sin drama y no convertimos el salón en reality show.",
     aboutDenisPhotoLabel: "Foto de Denis",
     aboutDenisName: "Denis, 38",
     aboutDenisText:
@@ -26,7 +26,7 @@ const TRANSLATIONS = {
     aboutFactClean: "Nevera: comida, no experimentos",
     apartmentTitle: "Qué piso buscamos",
     apartmentIntro:
-      "Buscamos un piso luminoso y tranquilo, donde el sonido más fuerte sea la cafetera… y algún que otro suspiro existencial.",
+      "Buscamos un piso luminoso y tranquilo, donde el mayor escándalo sea la cafetera de por la mañana.",
     apartmentLocationTitle: "Ubicación en Valencia",
     apartmentLocationText:
       "Barrios tranquilos con buena conexión al centro, panadería cerca y sin petardos todos los días como en Fallas.",
@@ -39,7 +39,7 @@ const TRANSLATIONS = {
       "Hablamos de números en privado: no prometemos milagros, pero sí sinceridad total.",
     whyUsTitle: "Por qué tus vecinos nos van a querer",
     whyUsIntro:
-      "Si tu piso está cansado de Erasmus y petardos improvisados, déjalo con nosotros: lo tratamos como un adulto trata su Wi‑Fi — con respeto.",
+      "Si tu piso está cansado de sobresaltos, con nosotros recupera la fe en la tranquilidad: cero caos, cero excusas y bastante sentido común.",
     whyUsIncomeTitle: "Ingresos estables",
     whyUsIncomeText:
       "Trabajamos de forma estable, pagamos sin excusas y no desaparecemos el día 5.",
@@ -48,7 +48,7 @@ const TRANSLATIONS = {
       "Mantenemos el piso limpio, ordenado y entero: muebles con vida, pero sin cicatrices nuevas.",
     whyUsNeighborsTitle: "Respeto a los vecinos",
     whyUsNeighborsText:
-      "No hacemos afters, no gritamos por el pasillo y, si algo suena a las 2:00, probablemente sea una serie mal pausada.",
+      "No hacemos afters, no gritamos por el pasillo y, si hay ruido a las 2:00, seguramente sea una tostadora demasiado motivada.",
     whyUsCommunicationTitle: "Comunicación sencilla",
     whyUsCommunicationText:
       "Hablamos inglés y estamos siempre disponibles por teléfono o mensajería.",
@@ -68,16 +68,16 @@ const TRANSLATIONS = {
   },
   en: {
     brandTitle: "Denis & Svetlana",
-    heroKicker: "Ridiculously responsible couple",
-    heroTitle: "We want a flat that has already survived a few Erasmus",
+    heroKicker: "Legally boring couple",
+    heroTitle: "We want a flat with no drama, no circus, no season 2",
     heroSubtitle:
-      "We are Denis (38) and Svetlana (37): no kids, no pets and more love for the sofa than for clubs. If your flat survived students, it will finally get some rest with us.",
+      "We are Denis (38) and Svetlana (37): no kids, no pets and the kind of routine that pays bills before they start shouting.",
     heroCtaPrimary: "Contact us",
     heroCtaSecondary: "See what we are looking for",
     heroPhotoLabel: "Our photo will go here",
     aboutTitle: "Who we are",
     aboutIntro:
-      "European couple with no kids and no pets: we pay on time, clean the bathroom and keep drama for TV shows.",
+      "European couple with no kids and no pets: we pay on time, clean up properly and keep drama where it belongs — on TV.",
     aboutDenisPhotoLabel: "Denis' photo",
     aboutDenisName: "Denis, 38",
     aboutDenisText:
@@ -93,7 +93,7 @@ const TRANSLATIONS = {
     aboutFactClean: "Fridge: food, not experiments",
     apartmentTitle: "What kind of flat we are looking for",
     apartmentIntro:
-      "We are looking for a bright, quiet flat where the loudest sound is the coffee machine… and the occasional existential sigh.",
+      "We are looking for a bright, quiet flat where the loudest daily event is the coffee machine.",
     apartmentLocationTitle: "Location in Valencia",
     apartmentLocationText:
       "Quiet neighbourhoods with good connection to the centre, a bakery nearby and not fireworks every single night like Fallas.",
@@ -106,7 +106,7 @@ const TRANSLATIONS = {
       "We will discuss budget in private: no miracles promised, but full honesty.",
     whyUsTitle: "Why your neighbours will like us",
     whyUsIntro:
-      "If your flat is tired of endless Erasmus parties and surprise fireworks, send it to us: we treat it like adults treat their Wi‑Fi — with respect.",
+      "If your flat is tired of chaos, with us it gets a reset: zero nonsense, zero excuses and a solid amount of common sense.",
     whyUsIncomeTitle: "Stable income",
     whyUsIncomeText:
       "We have stable jobs, pay on time and don’t disappear on the 5th.",
@@ -115,7 +115,7 @@ const TRANSLATIONS = {
       "We keep the place clean, tidy and in one piece: furniture with stories, not fresh scars.",
     whyUsNeighborsTitle: "Respect for neighbours",
     whyUsNeighborsText:
-      "No after‑parties, no shouting in the hallway and if something makes noise at 2 a.m., it is probably a badly paused series.",
+      "No after‑parties, no hallway shouting and if there is noise at 2 a.m., it is probably a toaster with ambitions.",
     whyUsCommunicationTitle: "Easy communication",
     whyUsCommunicationText:
       "We speak English and stay in touch by phone or messaging apps.",
