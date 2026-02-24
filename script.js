@@ -221,13 +221,41 @@ function handleLanguageToggleClick(event) {
   applyLanguage(lang);
 }
 
+const THEME_STORAGE_KEY = "family-landing-theme";
+
+function getInitialTheme() {
+  const stored = window.localStorage.getItem(THEME_STORAGE_KEY);
+  if (stored === "dark" || stored === "light") return stored;
+  if (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    return "dark";
+  }
+  return "light";
+}
+
+function applyTheme(theme) {
+  document.documentElement.setAttribute("data-theme", theme);
+  window.localStorage.setItem(THEME_STORAGE_KEY, theme);
+}
+
+function handleThemeToggle() {
+  const current = document.documentElement.getAttribute("data-theme") || "light";
+  applyTheme(current === "dark" ? "light" : "dark");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  applyTheme(getInitialTheme());
+
   const initialLang = getInitialLanguage();
   applyLanguage(initialLang);
 
   const languageToggle = document.querySelector(".language-toggle");
   if (languageToggle) {
     languageToggle.addEventListener("click", handleLanguageToggleClick);
+  }
+
+  const themeToggle = document.querySelector(".theme-toggle");
+  if (themeToggle) {
+    themeToggle.addEventListener("click", handleThemeToggle);
   }
 
   setupScrollAnimations();
