@@ -537,6 +537,8 @@ function handleThemeToggle() {
   applyTheme(current === "dark" ? "light" : "dark");
 }
 
+/* ── Easter egg: Console message ── */
+
 function printConsoleEasterEgg() {
   console.log(
     "%c" +
@@ -546,10 +548,12 @@ function printConsoleEasterEgg() {
     "color: #3b82f6; font-size: 14px; font-weight: bold; font-family: monospace;"
   );
   console.log(
-    "%cЕсли ты это читаешь — ты точно из tech.\nМы тоже. Так что давай без формальностей.\n\nСдай нам квартиру, и мы обещаем:\n• Платить вовремя\n• Не ломать ничего\n• Не открывать этот код в production\n\nP.S. Попробуй тройной клик по нашему имени в хедере.",
+    "%cЕсли ты это читаешь — ты точно из tech.\nМы тоже. Так что давай без формальностей.\n\nСдай нам квартиру, и мы обещаем:\n• Платить вовремя\n• Не ломать ничего\n• Не открывать этот код в production\n\nP.S. Попробуй тройной клик по нашему имени в хедере.\nP.P.S. Набери «piso» на клавиатуре.",
     "color: #94a3b8; font-size: 12px; line-height: 1.6; font-family: monospace;"
   );
 }
+
+/* ── Easter egg: Triple-click brand → Russian ── */
 
 function setupBrandEasterEgg() {
   const brand = document.querySelector(".brand-text");
@@ -580,6 +584,197 @@ function setupBrandEasterEgg() {
   });
 }
 
+/* ── Easter egg: Tab visibility — title change ── */
+
+function setupTabEasterEgg() {
+  const originalTitle = document.title;
+  let returned = false;
+
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden) {
+      document.title = "Vuelve! Aún no tenemos piso...";
+      returned = false;
+    } else if (!returned) {
+      document.title = "¡Has vuelto! ❤";
+      returned = true;
+      setTimeout(() => {
+        document.title = originalTitle;
+      }, 2000);
+    }
+  });
+}
+
+/* ── Easter egg: Night footer (00:00–06:00) ── */
+
+function applyNightFooter() {
+  const hour = new Date().getHours();
+  if (hour >= 0 && hour < 6) {
+    const footer = document.querySelector(".footer-text");
+    if (!footer) return;
+    const lang = getCurrentLanguage();
+    const nightTexts = {
+      es: "Denis & Svetlana · Son las " + hour + " de la mañana y no hacemos ruido. Solo CSS.",
+      en: "Denis & Svetlana · It's " + hour + " a.m. and we're not making noise. Just CSS.",
+      ru: "Денис & Светлана · Сейчас " + hour + " ночи, а мы тихо правим CSS.",
+    };
+    footer.textContent = nightTexts[lang] || nightTexts.es;
+  }
+}
+
+/* ── Easter egg: Konami Code → Matrix rain ── */
+
+function setupKonamiCode() {
+  const code = [
+    "ArrowUp", "ArrowUp", "ArrowDown", "ArrowDown",
+    "ArrowLeft", "ArrowRight", "ArrowLeft", "ArrowRight",
+    "KeyB", "KeyA",
+  ];
+  let pos = 0;
+
+  document.addEventListener("keydown", (e) => {
+    if (e.code === code[pos]) {
+      pos++;
+      if (pos === code.length) {
+        pos = 0;
+        triggerMatrixRain();
+      }
+    } else {
+      pos = 0;
+    }
+  });
+}
+
+function triggerMatrixRain() {
+  const overlay = document.getElementById("konamiOverlay");
+  const banner = document.getElementById("konamiBanner");
+  const canvas = document.getElementById("matrixCanvas");
+  if (!overlay || !canvas || !banner) return;
+
+  overlay.classList.add("is-active");
+  banner.classList.add("is-active");
+
+  const ctx = canvas.getContext("2d");
+  canvas.width = window.innerWidth;
+  canvas.height = window.innerHeight;
+
+  const fontSize = 14;
+  const columns = Math.floor(canvas.width / fontSize);
+  const drops = Array(columns).fill(1);
+  const chars = "アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホマミムメモヤユヨラリルレロワヲン01";
+
+  let frames = 0;
+  const maxFrames = 120;
+
+  function draw() {
+    ctx.fillStyle = "rgba(0, 0, 0, 0.06)";
+    ctx.fillRect(0, 0, canvas.width, canvas.height);
+    ctx.fillStyle = "#00ff41";
+    ctx.font = fontSize + "px monospace";
+
+    for (let i = 0; i < drops.length; i++) {
+      const char = chars[Math.floor(Math.random() * chars.length)];
+      ctx.fillText(char, i * fontSize, drops[i] * fontSize);
+      if (drops[i] * fontSize > canvas.height && Math.random() > 0.975) {
+        drops[i] = 0;
+      }
+      drops[i]++;
+    }
+
+    frames++;
+    if (frames < maxFrames) {
+      requestAnimationFrame(draw);
+    } else {
+      overlay.classList.remove("is-active");
+      banner.classList.remove("is-active");
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+  }
+
+  draw();
+}
+
+/* ── Easter egg: Long hover on main photo → tooltip ── */
+
+function setupPhotoTooltip() {
+  const photo = document.querySelector(".photo-placeholder--main");
+  const heroMedia = document.querySelector(".hero-media");
+  if (!photo || !heroMedia) return;
+
+  const tooltip = document.createElement("span");
+  tooltip.className = "photo-tooltip";
+  heroMedia.appendChild(tooltip);
+
+  const texts = {
+    es: "Sí, somos reales. No, no es IA. Sí, también sonreímos en persona.",
+    en: "Yes, we're real. No, it's not AI. Yes, we smile in person too.",
+    ru: "Да, мы настоящие. Нет, это не нейросеть. Да, вживую тоже улыбаемся.",
+  };
+
+  let hoverTimer = null;
+
+  photo.addEventListener("mouseenter", () => {
+    hoverTimer = setTimeout(() => {
+      tooltip.textContent = texts[getCurrentLanguage()] || texts.es;
+      tooltip.classList.add("is-visible");
+    }, 4000);
+  });
+
+  photo.addEventListener("mouseleave", () => {
+    clearTimeout(hoverTimer);
+    tooltip.classList.remove("is-visible");
+  });
+}
+
+/* ── Easter egg: Secret word "piso" → confetti ── */
+
+function setupSecretWord() {
+  const target = "piso";
+  let buffer = "";
+
+  document.addEventListener("keydown", (e) => {
+    if (e.target.tagName === "INPUT" || e.target.tagName === "TEXTAREA") return;
+    buffer += e.key.toLowerCase();
+    if (buffer.length > 20) buffer = buffer.slice(-20);
+    if (buffer.endsWith(target)) {
+      buffer = "";
+      triggerConfetti();
+    }
+  });
+}
+
+function triggerConfetti() {
+  const colors = ["#ce1720", "#ffffff", "#3b82f6", "#f59e0b", "#10b981", "#8b5cf6"];
+  const count = 60;
+
+  for (let i = 0; i < count; i++) {
+    const piece = document.createElement("div");
+    piece.className = "confetti-piece";
+    piece.style.left = Math.random() * 100 + "vw";
+    piece.style.top = "-10px";
+    piece.style.background = colors[Math.floor(Math.random() * colors.length)];
+    piece.style.animationDelay = Math.random() * 0.6 + "s";
+    piece.style.animationDuration = 1.2 + Math.random() * 1.2 + "s";
+    piece.style.width = 6 + Math.random() * 6 + "px";
+    piece.style.height = 6 + Math.random() * 6 + "px";
+    document.body.appendChild(piece);
+    setTimeout(() => piece.remove(), 3000);
+  }
+
+  const banner = document.getElementById("confettiBanner");
+  if (banner) {
+    const msgs = {
+      es: "¡Has escrito «piso»! Ahora solo falta que nos lo alquiles.",
+      en: "You typed «piso»! Now just rent it to us.",
+      ru: "Ты набрал «piso»! Осталось только сдать нам квартиру.",
+    };
+    banner.textContent = msgs[getCurrentLanguage()] || msgs.es;
+    banner.classList.add("is-active");
+    setTimeout(() => banner.classList.remove("is-active"), 3000);
+  }
+}
+
+/* ── Init ── */
+
 document.addEventListener("DOMContentLoaded", () => {
   printConsoleEasterEgg();
 
@@ -599,5 +794,10 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   setupBrandEasterEgg();
+  setupTabEasterEgg();
+  setupKonamiCode();
+  setupPhotoTooltip();
+  setupSecretWord();
+  applyNightFooter();
   setupScrollAnimations();
 });
