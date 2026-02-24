@@ -1,5 +1,74 @@
 const TRANSLATIONS = {
   light: {
+    ru: {
+      brandTitle: "Денис & Светлана",
+      heroKicker: "Секретный уровень разблокирован",
+      heroTitle: "Два беларуса ищут квартиру. Нет, мы не будем майнить крипту",
+      heroSubtitle:
+        "Денис (38) и Светлана (37). Детей нет — стены целые. Животных нет — диван не погрызен. Вечеринок нет — полиция нас не знает. Звучит слишком хорошо? Ну да.",
+      heroCtaPrimary: "Отдай нам квартиру",
+      heroCtaSecondary: "Что мы ищем?",
+      heroPhotoLabel: "Тут будет наше фото",
+      aboutTitle: "Кто мы такие",
+      aboutIntro:
+        "Если твои прошлые жильцы оставили квартиру как после апокалипсиса — выдохни. Мы оставляем ванную чище, чем нашли. Да, мы существуем.",
+      aboutDenisPhotoLabel: "Фото Дениса",
+      aboutDenisName: "Денис, 38",
+      aboutDenisText:
+        "Работает в IT, говорит тихо, друзей с гитарой в 4 утра не имеет. Обещаем.",
+      aboutSvetlanaPhotoLabel: "Фото Светланы",
+      aboutSvetlanaName: "Светлана, 37",
+      aboutSvetlanaText:
+        "Творческая, организованная и реально моет кухню после готовки. В 2026 это уже суперсила.",
+      aboutUsFactsTitle: "Ключевые факты",
+      aboutFactNoKids: "Дети: 0. Стены целы.",
+      aboutFactNoPets: "Животные: 0. Диван не пострадал.",
+      aboutFactCalm: "Вечеринки: 0. Полиция не в курсе.",
+      aboutFactClean: "Холодильник: без неопознанных форм жизни.",
+      apartmentTitle: "Что мы ищем",
+      apartmentIntro:
+        "Не дворец, а четыре стены без плесени и хозяина, который не пропадает когда что-то ломается.",
+      apartmentLocationTitle: "Район в Валенсии",
+      apartmentLocationText:
+        "Русафа, Бенимаклет, Кабаньяль — нам пофиг. Если нет петард каждую ночь и есть Меркадона рядом — берём.",
+      apartmentSizeTitle: "Размер и планировка",
+      apartmentSizeText:
+        "1–2 спальни. Если влезает стол и есть естественный свет — мы уже влюблены.",
+      apartmentTermTitle: "Срок аренды",
+      apartmentTermText:
+        "Не съедем через 3 месяца. Если квартира нравится — останемся дольше, чем плесень.",
+      apartmentBudgetTitle: "Бюджет",
+      apartmentBudgetText:
+        "Цифры обсуждаем лично. Не торгуемся как на рынке, но и фантастические цены не принимаем.",
+      whyUsTitle: "Почему твоей квартире нужны мы",
+      whyUsIntro:
+        "Твоя квартира настрадалась. С нами она уходит на пенсию от хаоса: никаких отмазок, никаких сюрпризов, никаких звонков в 3 ночи.",
+      whyUsIncomeTitle: "Стабильный доход",
+      whyUsIncomeText:
+        "Платим 1-го числа, а не 15-го. Без креативных отмазок, без «завтра переведу». Реальные деньги, вовремя.",
+      whyUsCareTitle: "Забота о квартире",
+      whyUsCareText:
+        "Не ломаем вещи, не делаем «ремонт» без предупреждения и возвращаем квартиру лучше, чем получили.",
+      whyUsNeighborsTitle: "Уважение к соседям",
+      whyUsNeighborsText:
+        "Соседи даже не узнают, что мы существуем. Но если встретят на лестнице — поздороваемся. Мы такие странные.",
+      whyUsCommunicationTitle: "Простая коммуникация",
+      whyUsCommunicationText:
+        "Отвечаем на сообщения, берём трубку и не придумываем отмазки. В общем — единороги аренды.",
+      contactTitle: "Есть квартира? Давай поговорим.",
+      contactIntro:
+        "Если у тебя есть квартира в Валенсии и ты устал от жильцов, которые исчезают или оставляют квартиру как после бомбёжки — напиши нам.",
+      contactEmailLabel: "Email",
+      contactEmailValue: "example@email.com",
+      contactPhoneLabel: "Телефон",
+      contactPhoneValue: "+34 123 456 789",
+      contactSocialLabel: "Мессенджеры",
+      contactSocialValue: "WhatsApp, Telegram или соцсети.",
+      contactButton: "Написать нам",
+      contactNote:
+        "Контакты пока тестовые. Настоящие добавим когда перестанем прокрастинировать.",
+      footerText: "Денис & Светлана · Ищем квартиру в Валенсии (серьёзно)",
+    },
     es: {
       brandTitle: "Denis & Svetlana",
       heroKicker: "Pareja responsable en Valencia",
@@ -140,6 +209,75 @@ const TRANSLATIONS = {
     },
   },
   dark: {
+    ru: {
+      brandTitle: "Денис & Светлана",
+      heroKicker: "Ты нашёл секретный уровень. Респект.",
+      heroTitle: "Два беларуса ищут хату. Нет, мы не откроем подпольное казино",
+      heroSubtitle:
+        "Денис (38) и Светлана (37). Детей нет — обои в безопасности. Собаки нет — лифт сухой. Отмазок первого числа нет — мы платим. Шок? Читай дальше.",
+      heroCtaPrimary: "Давай квартиру сюда",
+      heroCtaSecondary: "Чего мы хотим?",
+      heroPhotoLabel: "Наше фото будет тут",
+      aboutTitle: "Кто мы вообще",
+      aboutIntro:
+        "Если твои прошлые жильцы превратили квартиру в зону боевых действий — расслабься. Мы моем за собой сковородку. Да. В 2026 году. Вручную.",
+      aboutDenisPhotoLabel: "Фото Дениса",
+      aboutDenisName: "Денис, 38",
+      aboutDenisText:
+        "Айтишник. Тихий. Друзей с караоке-машиной в 3 ночи нет. Максимум — звук клавиатуры. Механической. Извини.",
+      aboutSvetlanaPhotoLabel: "Фото Светланы",
+      aboutSvetlanaName: "Светлана, 37",
+      aboutSvetlanaText:
+        "Творческая натура, которая реально убирает за собой. Нет, это не шутка. Нет, это не AI-генерация. Она настоящая.",
+      aboutUsFactsTitle: "Факты о нас",
+      aboutFactNoKids: "Дети: 0. Стены целы, спасибо.",
+      aboutFactNoPets: "Животные: 0. Ножки дивана на месте.",
+      aboutFactCalm: "Вечеринки: 0. Участковый нас не знает.",
+      aboutFactClean: "Холодильник: без биологических экспериментов.",
+      apartmentTitle: "Что мы ищем",
+      apartmentIntro:
+        "Нам не нужен пентхаус. Четыре стены, потолок, отсутствие грибка и хозяин, который берёт трубку — уже мечта.",
+      apartmentLocationTitle: "Район",
+      apartmentLocationText:
+        "Русафа, Бенимаклет, Кабаньяль, да хоть Патраиш. Если ночью тихо и есть где купить хамон — мы в деле.",
+      apartmentSizeTitle: "Размер",
+      apartmentSizeText:
+        "1–2 спальни. Если есть куда поставить монитор и откуда падает солнце — считай, мы уже подписали контракт в голове.",
+      apartmentTermTitle: "Срок",
+      apartmentTermText:
+        "Не съедем через квартал. Если нравится — приклеемся крепче, чем штукатурка.",
+      apartmentBudgetTitle: "Деньги",
+      apartmentBudgetText:
+        "Обсудим лично. Без базарного торга, но и «1500 за 40 метров без лифта» — мимо.",
+      whyUsTitle: "Почему мы — лучшее, что случится с твоей квартирой",
+      whyUsIntro:
+        "Твоя квартира видела всякое. С нами она наконец отдохнёт. Ни отмазок, ни сюрпризов, ни потопов, ни полиции.",
+      whyUsIncomeTitle: "Деньги есть",
+      whyUsIncomeText:
+        "Платим 1-го. Не 5-го, не 15-го, не «в следующем месяце точно». Первого. Числа. Каждого. Месяца.",
+      whyUsCareTitle: "Не ломаем",
+      whyUsCareText:
+        "Не делаем «мелкий ремонт» без спроса, не красим стены в чёрный и возвращаем квартиру лучше, чем взяли.",
+      whyUsNeighborsTitle: "Соседи не пострадают",
+      whyUsNeighborsText:
+        "Соседи узнают о нашем существовании только если мы придержим им дверь. Мы тихие. Подозрительно тихие.",
+      whyUsCommunicationTitle: "На связи",
+      whyUsCommunicationText:
+        "Отвечаем на сообщения, берём трубку, не врём. Среди арендаторов — это как найти единорога.",
+      contactTitle: "Есть хата? Го обсудим.",
+      contactIntro:
+        "Если у тебя квартира в Валенсии и ты уже заколебался с жильцами, которые пропадают или устраивают зону отчуждения — пиши. Мы скучные в лучшем смысле.",
+      contactEmailLabel: "Почта",
+      contactEmailValue: "example@email.com",
+      contactPhoneLabel: "Телефон",
+      contactPhoneValue: "+34 123 456 789",
+      contactSocialLabel: "Мессенджеры",
+      contactSocialValue: "WhatsApp, Telegram или соцсети.",
+      contactButton: "Написать",
+      contactNote:
+        "Контакты пока фейковые. Реальные будут, когда победим лень.",
+      footerText: "Денис & Светлана · Квартиру ищем. Серьёзно. Ну почти.",
+    },
     es: {
       brandTitle: "Denis & Svetlana",
       heroKicker: "Tus peores inquilinos... es broma",
@@ -294,7 +432,7 @@ function applyLanguage(lang) {
   const dictionary = TRANSLATIONS[theme]?.[lang] || TRANSLATIONS.light[lang];
   if (!dictionary) return;
 
-  document.documentElement.lang = lang === "es" ? "es" : "en";
+  document.documentElement.lang = lang;
 
   const elements = document.querySelectorAll("[data-i18n-key]");
   elements.forEach((el) => {
@@ -353,9 +491,11 @@ function setupScrollAnimations() {
   animated.forEach((el) => observer.observe(el));
 }
 
+const VALID_LANGS = ["es", "en", "ru"];
+
 function getInitialLanguage() {
   const stored = window.localStorage.getItem(STORAGE_KEY);
-  if (stored && (stored === "es" || stored === "en")) {
+  if (stored && VALID_LANGS.includes(stored)) {
     return stored;
   }
 
@@ -371,7 +511,7 @@ function handleLanguageToggleClick(event) {
   if (!button) return;
 
   const lang = button.getAttribute("data-lang");
-  if (!lang || !TRANSLATIONS.light[lang]) return;
+  if (!lang || !VALID_LANGS.includes(lang)) return;
 
   window.localStorage.setItem(STORAGE_KEY, lang);
   applyLanguage(lang);
@@ -397,7 +537,52 @@ function handleThemeToggle() {
   applyTheme(current === "dark" ? "light" : "dark");
 }
 
+function printConsoleEasterEgg() {
+  console.log(
+    "%c" +
+      "╔═══════════════════════════════════════╗\n" +
+      "║       D & S · Valencia Edition        ║\n" +
+      "╚═══════════════════════════════════════╝",
+    "color: #3b82f6; font-size: 14px; font-weight: bold; font-family: monospace;"
+  );
+  console.log(
+    "%cЕсли ты это читаешь — ты точно из tech.\nМы тоже. Так что давай без формальностей.\n\nСдай нам квартиру, и мы обещаем:\n• Платить вовремя\n• Не ломать ничего\n• Не открывать этот код в production\n\nP.S. Попробуй тройной клик по нашему имени в хедере.",
+    "color: #94a3b8; font-size: 12px; line-height: 1.6; font-family: monospace;"
+  );
+}
+
+function setupBrandEasterEgg() {
+  const brand = document.querySelector(".brand-text");
+  if (!brand) return;
+
+  let clickCount = 0;
+  let clickTimer = null;
+
+  brand.addEventListener("click", () => {
+    clickCount++;
+    clearTimeout(clickTimer);
+
+    if (clickCount >= 3) {
+      clickCount = 0;
+      const currentLang = getCurrentLanguage();
+      if (currentLang === "ru") {
+        window.localStorage.setItem(STORAGE_KEY, "es");
+        applyLanguage("es");
+      } else {
+        window.localStorage.setItem(STORAGE_KEY, "ru");
+        applyLanguage("ru");
+      }
+    } else {
+      clickTimer = setTimeout(() => {
+        clickCount = 0;
+      }, 500);
+    }
+  });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
+  printConsoleEasterEgg();
+
   applyTheme(getInitialTheme());
 
   const initialLang = getInitialLanguage();
@@ -413,5 +598,6 @@ document.addEventListener("DOMContentLoaded", () => {
     themeToggle.addEventListener("click", handleThemeToggle);
   }
 
+  setupBrandEasterEgg();
   setupScrollAnimations();
 });
