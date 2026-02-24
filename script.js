@@ -1,16 +1,16 @@
 const TRANSLATIONS = {
   es: {
     brandTitle: "Denis & Svetlana",
-    heroKicker: "Pareja responsable (pero con carácter)",
-    heroTitle: "Queremos un piso tan tranquilo como nosotros, casi",
+    heroKicker: "Pareja aburridamente responsable",
+    heroTitle: "Buscamos un piso que ya haya sobrevivido a varios Erasmus",
     heroSubtitle:
-      "Somos Denis (38) y Svetlana (37), pareja tranquila sin hijos ni mascotas que busca un hogar luminoso en Valencia.",
+      "Somos Denis (38) y Svetlana (37): sin hijos, sin mascotas y con más ganas de sofá que de discoteca. Si tu piso aguantó estudiantes, con nosotros va a descansar.",
     heroCtaPrimary: "Contactar con nosotros",
     heroCtaSecondary: "Ver qué buscamos",
     heroPhotoLabel: "Aquí irá nuestra foto juntos",
     aboutTitle: "Quiénes somos",
     aboutIntro:
-      "Pareja europea sin hijos ni mascotas: dos adultos limpios, puntuales y sin dramas.",
+      "Pareja europea sin hijos ni mascotas: pagamos a tiempo, recogemos el baño y discutimos en voz baja. Casi aburrido, lo sabemos.",
     aboutDenisPhotoLabel: "Foto de Denis",
     aboutDenisName: "Denis, 38",
     aboutDenisText:
@@ -20,39 +20,41 @@ const TRANSLATIONS = {
     aboutSvetlanaText:
       "Creativa y muy organizada. Le encantan los interiores luminosos, el orden y la cocina casera.",
     aboutUsFactsTitle: "Datos importantes",
-    aboutFactNoKids: "Cero niños",
-    aboutFactNoPets: "Cero mascotas",
-    aboutFactCalm: "Cero fiestas ruidosas",
-    aboutFactClean: "Cero desorden",
+    aboutFactNoKids: "Niños: 0 (plantas: quizá)",
+    aboutFactNoPets: "Mascotas: sólo las de los vecinos",
+    aboutFactCalm: "Fiestas: las del vecino de arriba, no las nuestras",
+    aboutFactClean: "Nevera: comida, no experimentos",
     apartmentTitle: "Qué piso buscamos",
     apartmentIntro:
-      "Buscamos un piso luminoso y tranquilo, cómodo para dos personas que trabajan desde casa.",
+      "Buscamos un piso luminoso y tranquilo, donde el sonido más fuerte sea la cafetera… y algún que otro suspiro existencial.",
     apartmentLocationTitle: "Ubicación en Valencia",
     apartmentLocationText:
-      "Barrios tranquilos con buena conexión al centro y servicios cerca.",
+      "Barrios tranquilos con buena conexión al centro, panadería cerca y sin petardos todos los días como en Fallas.",
     apartmentSizeTitle: "Tamaño y distribución",
     apartmentSizeText: "1–2 dormitorios, salón luminoso y espacio para trabajar.",
     apartmentTermTitle: "Plazo y estabilidad",
     apartmentTermText: "Buscamos estancia estable y de largo plazo.",
     apartmentBudgetTitle: "Presupuesto",
     apartmentBudgetText:
-      "Comentaremos el presupuesto en privado: somos realistas y abiertos al diálogo.",
-    whyUsTitle: "Por qué será cómodo con nosotros",
+      "Hablamos de números en privado: no prometemos milagros, pero sí sinceridad total.",
+    whyUsTitle: "Por qué tus vecinos nos van a querer",
     whyUsIntro:
-      "No buscamos un piso perfecto, buscamos uno vivo. Lo cuidamos, pero sin obsesiones: como un hogar real.",
+      "Si tu piso está cansado de Erasmus y petardos improvisados, déjalo con nosotros: lo tratamos como un adulto trata su Wi‑Fi — con respeto.",
     whyUsIncomeTitle: "Ingresos estables",
-    whyUsIncomeText: "Trabajamos de forma estable y podemos confirmar ingresos.",
+    whyUsIncomeText:
+      "Trabajamos de forma estable, pagamos sin excusas y no desaparecemos el día 5.",
     whyUsCareTitle: "Cuidado del piso",
-    whyUsCareText: "Mantenemos el piso limpio, ordenado y en buen estado.",
+    whyUsCareText:
+      "Mantenemos el piso limpio, ordenado y entero: muebles con vida, pero sin cicatrices nuevas.",
     whyUsNeighborsTitle: "Respeto a los vecinos",
     whyUsNeighborsText:
-      "No hacemos afters, no gritamos por el pasillo y no probamos la acústica del piso a las 2:00.",
+      "No hacemos afters, no gritamos por el pasillo y, si algo suena a las 2:00, probablemente sea una serie mal pausada.",
     whyUsCommunicationTitle: "Comunicación sencilla",
     whyUsCommunicationText:
       "Hablamos inglés y estamos siempre disponibles por teléfono o mensajería.",
     contactTitle: "Hablemos sobre el piso",
     contactIntro:
-      "Si tienes un piso en Valencia que encaje con nosotros, estaremos encantados de hablar contigo.",
+      "Si tienes un piso en Valencia que encaje con nosotros (Ruzafa, Benimaclet, Cabanyal… estamos abiertos), estaremos encantados de hablar contigo.",
     contactEmailLabel: "Email",
     contactEmailValue: "example@email.com",
     contactPhoneLabel: "Teléfono",
@@ -66,16 +68,16 @@ const TRANSLATIONS = {
   },
   en: {
     brandTitle: "Denis & Svetlana",
-    heroKicker: "Responsible couple (with a twist)",
-    heroTitle: "We want a flat as calm as we are, almost",
+    heroKicker: "Ridiculously responsible couple",
+    heroTitle: "We want a flat that has already survived a few Erasmus",
     heroSubtitle:
-      "We are Denis (38) and Svetlana (37), a calm couple with no children or pets looking for a bright home in Valencia.",
+      "We are Denis (38) and Svetlana (37): no kids, no pets and more love for the sofa than for clubs. If your flat survived students, it will finally get some rest with us.",
     heroCtaPrimary: "Contact us",
     heroCtaSecondary: "See what we are looking for",
     heroPhotoLabel: "Our photo will go here",
     aboutTitle: "Who we are",
     aboutIntro:
-      "European couple with no kids and no pets: two tidy adults, on time and with zero drama.",
+      "European couple with no kids and no pets: we pay on time, clean the bathroom and keep drama for TV shows.",
     aboutDenisPhotoLabel: "Denis' photo",
     aboutDenisName: "Denis, 38",
     aboutDenisText:
@@ -85,39 +87,41 @@ const TRANSLATIONS = {
     aboutSvetlanaText:
       "Creative and very organized. Loves bright interiors, order and home cooking.",
     aboutUsFactsTitle: "Key facts",
-    aboutFactNoKids: "Zero kids",
-    aboutFactNoPets: "Zero pets",
-    aboutFactCalm: "Zero loud parties",
-    aboutFactClean: "Zero mess",
+    aboutFactNoKids: "Kids: 0 (maybe plants)",
+    aboutFactNoPets: "Pets: only the neighbours’",
+    aboutFactCalm: "Parties: hosted by the upstairs neighbour, not us",
+    aboutFactClean: "Fridge: food, not experiments",
     apartmentTitle: "What kind of flat we are looking for",
     apartmentIntro:
-      "We are looking for a bright, quiet flat, comfortable for two people working from home.",
+      "We are looking for a bright, quiet flat where the loudest sound is the coffee machine… and the occasional existential sigh.",
     apartmentLocationTitle: "Location in Valencia",
     apartmentLocationText:
-      "Quiet neighbourhoods with good connection to the centre and services nearby.",
+      "Quiet neighbourhoods with good connection to the centre, a bakery nearby and not fireworks every single night like Fallas.",
     apartmentSizeTitle: "Size and layout",
     apartmentSizeText: "1–2 bedrooms, bright living room and space to work.",
     apartmentTermTitle: "Term and stability",
     apartmentTermText: "We are looking for a stable, long‑term stay.",
     apartmentBudgetTitle: "Budget",
     apartmentBudgetText:
-      "We will discuss budget details in private — we are realistic and open to dialogue.",
-    whyUsTitle: "Why it will be comfortable with us",
+      "We will discuss budget in private: no miracles promised, but full honesty.",
+    whyUsTitle: "Why your neighbours will like us",
     whyUsIntro:
-      "We are not looking for a perfect flat, but for a real one. We take care of it, without turning it into a museum.",
+      "If your flat is tired of endless Erasmus parties and surprise fireworks, send it to us: we treat it like adults treat their Wi‑Fi — with respect.",
     whyUsIncomeTitle: "Stable income",
-    whyUsIncomeText: "We have stable jobs and can provide proof of income.",
+    whyUsIncomeText:
+      "We have stable jobs, pay on time and don’t disappear on the 5th.",
     whyUsCareTitle: "We care for the flat",
-    whyUsCareText: "We keep the place clean, tidy and in good condition.",
+    whyUsCareText:
+      "We keep the place clean, tidy and in one piece: furniture with stories, not fresh scars.",
     whyUsNeighborsTitle: "Respect for neighbours",
     whyUsNeighborsText:
-      "No after‑parties, no shouting in the hallway and no sound tests at 2 a.m.",
+      "No after‑parties, no shouting in the hallway and if something makes noise at 2 a.m., it is probably a badly paused series.",
     whyUsCommunicationTitle: "Easy communication",
     whyUsCommunicationText:
       "We speak English and stay in touch by phone or messaging apps.",
     contactTitle: "Let's talk about the flat",
     contactIntro:
-      "If you have a flat in Valencia that might fit us, we will be happy to talk.",
+      "If you have a flat in Valencia that might fit us (Ruzafa, Benimaclet, Cabanyal… we are open), we will be happy to talk.",
     contactEmailLabel: "Email",
     contactEmailValue: "example@email.com",
     contactPhoneLabel: "Phone",
