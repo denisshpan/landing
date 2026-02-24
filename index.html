@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Denis &amp; Svetlana · Buscamos piso en Valencia</title>
+    <meta
+      name="description"
+      content="Denis (38) y Svetlana (37), pareja sin hijos ni mascotas, buscan piso acogedor en Valencia. Conócenos mejor y contacta fácilmente."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <header class="site-header">
+        <div class="brand">
+          <span class="brand-mark">D&amp;S</span>
+          <span class="brand-text" data-i18n-key="brandTitle">
+            Denis &amp; Svetlana
+          </span>
+        </div>
+        <div class="header-right">
+          <div class="language-toggle" aria-label="Language switcher">
+            <button
+              class="language-toggle__btn language-toggle__btn--active"
+              data-lang="es"
+              type="button"
+            >
+              ES
+            </button>
+            <button class="language-toggle__btn" data-lang="en" type="button">
+              EN
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero" data-animate="fade-up">
+          <div class="hero-text">
+            <p class="hero-kicker" data-i18n-key="heroKicker">
+              Pareja responsable en Valencia
+            </p>
+            <h1 class="hero-title" data-i18n-key="heroTitle">
+              Buscamos un piso acogedor en Valencia
+            </h1>
+            <p class="hero-subtitle" data-i18n-key="heroSubtitle">
+              Somos Denis (38) y Svetlana (37), pareja tranquila sin hijos ni
+              mascotas. Soñamos con encontrar un hogar luminoso y cuidar de él
+              como propio.
+            </p>
+            <div class="hero-actions">
+              <a
+                href="#contact"
+                class="btn btn-primary"
+                data-i18n-key="heroCtaPrimary"
+              >
+                Contactar con nosotros
+              </a>
+              <a
+                href="#apartment"
+                class="btn btn-secondary"
+                data-i18n-key="heroCtaSecondary"
+              >
+                Ver qué buscamos
+              </a>
+            </div>
+          </div>
+          <div class="hero-media" data-animate="fade-in">
+            <div class="photo-placeholder photo-placeholder--main">
+              <img
+                src="./assets/couple-main.jpg"
+                alt="Pareja relajada en casa, sentados juntos en el sofá"
+              />
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="about" data-animate="fade-up">
+          <div class="section-header">
+            <h2 class="section-title" data-i18n-key="aboutTitle">
+              Quiénes somos
+            </h2>
+            <p class="section-intro" data-i18n-key="aboutIntro">
+              Pareja europea, trabajadores remotos, tranquilos y muy
+              respetuosos con el espacio donde vivimos.
+            </p>
+          </div>
+
+          <div class="about-grid">
+            <article class="card card--person">
+              <div class="card-photo">
+                <div class="photo-placeholder">
+                  <img
+                    src="./assets/denis.jpg"
+                    alt="Hombre trabajando con portátil en casa"
+                  />
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title" data-i18n-key="aboutDenisName">
+                  Denis, 38
+                </h3>
+                <p class="card-text" data-i18n-key="aboutDenisText">
+                  Trabaja en el sector digital, calmado y responsable. Le gusta
+                  el deporte, la tecnología y caminar por la ciudad.
+                </p>
+              </div>
+            </article>
+
+            <article class="card card--person">
+              <div class="card-photo">
+                <div class="photo-placeholder">
+                  <img
+                    src="./assets/svetlana.jpg"
+                    alt="Mujer sentada en un salón acogedor"
+                  />
+                </div>
+              </div>
+              <div class="card-body">
+                <h3 class="card-title" data-i18n-key="aboutSvetlanaName">
+                  Svetlana, 37
+                </h3>
+                <p class="card-text" data-i18n-key="aboutSvetlanaText">
+                  Creativa, organizada y muy cuidadosa con el hogar. Ama los
+                  interiores luminosos, el orden y la cocina casera.
+                </p>
+              </div>
+            </article>
+
+            <article class="card card--info">
+              <div class="card-body">
+                <h3 class="card-title" data-i18n-key="aboutUsFactsTitle">
+                  Datos importantes
+                </h3>
+                <ul class="tag-list">
+                  <li class="tag" data-i18n-key="aboutFactNoKids">
+                    Sin hijos
+                  </li>
+                  <li class="tag" data-i18n-key="aboutFactNoPets">
+                    Sin mascotas
+                  </li>
+                  <li class="tag" data-i18n-key="aboutFactCalm">
+                    Vida tranquila y sin fiestas
+                  </li>
+                  <li class="tag" data-i18n-key="aboutFactClean">
+                    Muy ordenados y limpios
+                  </li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--accent" id="apartment" data-animate="fade-up">
+          <div class="section-header section-header--center">
+            <h2 class="section-title" data-i18n-key="apartmentTitle">
+              Qué piso buscamos
+            </h2>
+            <p class="section-intro" data-i18n-key="apartmentIntro">
+              Estamos abiertos a distintas opciones, pero idealmente buscamos un
+              piso luminoso, cómodo para dos personas que trabajan desde casa.
+            </p>
+          </div>
+
+          <div class="features-grid">
+            <article class="feature-card">
+              <h3 class="feature-title" data-i18n-key="apartmentLocationTitle">
+                Ubicación en Valencia
+              </h3>
+              <p class="feature-text" data-i18n-key="apartmentLocationText">
+                Barrios tranquilos con buena conexión al centro. Cerca de
+                supermercados y transporte público.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <h3 class="feature-title" data-i18n-key="apartmentSizeTitle">
+                Tamaño y distribución
+              </h3>
+              <p class="feature-text" data-i18n-key="apartmentSizeText">
+                1–2 dormitorios, salón luminoso, espacio cómodo para trabajar
+                con portátil.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <h3 class="feature-title" data-i18n-key="apartmentTermTitle">
+                Plazo y estabilidad
+              </h3>
+              <p class="feature-text" data-i18n-key="apartmentTermText">
+                Buscamos vivienda para estancia estable y de largo plazo.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <h3 class="feature-title" data-i18n-key="apartmentBudgetTitle">
+                Presupuesto
+              </h3>
+              <p class="feature-text" data-i18n-key="apartmentBudgetText">
+                Comentaremos detalles del presupuesto en privado — somos
+                realistas y abiertos al diálogo.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section" id="why-us" data-animate="fade-up">
+          <div class="section-header section-header--center">
+            <h2 class="section-title" data-i18n-key="whyUsTitle">
+              Por qué será cómodo con nosotros
+            </h2>
+            <p class="section-intro" data-i18n-key="whyUsIntro">
+              Tratamos cada piso como nuestro hogar. Cuidamos los muebles, los
+              vecinos y el ambiente de la casa.
+            </p>
+          </div>
+
+          <div class="benefits-grid">
+            <article class="benefit-card">
+              <span class="benefit-icon">✓</span>
+              <h3 class="benefit-title" data-i18n-key="whyUsIncomeTitle">
+                Ingresos estables
+              </h3>
+              <p class="benefit-text" data-i18n-key="whyUsIncomeText">
+                Trabajamos de forma estable y podemos confirmar ingresos.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <span class="benefit-icon">✓</span>
+              <h3 class="benefit-title" data-i18n-key="whyUsCareTitle">
+                Cuidado del piso
+              </h3>
+              <p class="benefit-text" data-i18n-key="whyUsCareText">
+                Somos muy cuidadosos con el espacio: limpieza, orden y respeto
+                a las normas de la casa.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <span class="benefit-icon">✓</span>
+              <h3 class="benefit-title" data-i18n-key="whyUsNeighborsTitle">
+                Respeto a los vecinos
+              </h3>
+              <p class="benefit-text" data-i18n-key="whyUsNeighborsText">
+                No organizamos fiestas, no hacemos ruido por la noche, cuidamos
+                del ambiente en la comunidad.
+              </p>
+            </article>
+
+            <article class="benefit-card">
+              <span class="benefit-icon">✓</span>
+              <h3 class="benefit-title" data-i18n-key="whyUsCommunicationTitle">
+                Comunicación sencilla
+              </h3>
+              <p class="benefit-text" data-i18n-key="whyUsCommunicationText">
+                Hablamos inglés y estamos siempre en contacto por teléfono o
+                mensajería.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="section section--contact" id="contact" data-animate="fade-up">
+          <div class="section-header section-header--center">
+            <h2 class="section-title" data-i18n-key="contactTitle">
+              Hablemos sobre el piso
+            </h2>
+            <p class="section-intro" data-i18n-key="contactIntro">
+              Si tienes un piso en Valencia que encaje con nosotros, estaremos
+              encantados de hablar contigo. Escríbenos por el canal que te sea
+              más cómodo.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <div class="contact-main">
+              <div class="contact-item">
+                <span class="contact-label" data-i18n-key="contactEmailLabel">
+                  Email
+                </span>
+                <a
+                  href="mailto:example@email.com"
+                  class="contact-value"
+                  data-i18n-key="contactEmailValue"
+                >
+                  example@email.com
+                </a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label" data-i18n-key="contactPhoneLabel">
+                  Teléfono
+                </span>
+                <a
+                  href="tel:+34123456789"
+                  class="contact-value"
+                  data-i18n-key="contactPhoneValue"
+                >
+                  +34 123 456 789
+                </a>
+              </div>
+              <div class="contact-item">
+                <span class="contact-label" data-i18n-key="contactSocialLabel">
+                  Mensajería / redes
+                </span>
+                <p
+                  class="contact-value"
+                  data-i18n-key="contactSocialValue"
+                >
+                  Enlace a WhatsApp, Telegram o redes sociales (placeholder).
+                </p>
+              </div>
+              <a
+                href="mailto:example@email.com"
+                class="btn btn-primary btn-contact"
+                data-i18n-key="contactButton"
+              >
+                Escribir un correo ahora
+              </a>
+            </div>
+
+            <div class="contact-note">
+              <p class="contact-note__text" data-i18n-key="contactNote">
+                Todos los datos de contacto que ves aquí son placeholders. Los
+                cambiaremos fácilmente por tus contactos reales cuando todo
+                esté listo.
+              </p>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <p class="footer-text" data-i18n-key="footerText">
+          Denis &amp; Svetlana · Buscando piso en Valencia
+        </p>
+      </footer>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+
