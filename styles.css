@@ -106,21 +106,6 @@ a {
   gap: 10px;
 }
 
-.brand-mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 10px;
-  background: var(--color-text);
-  color: var(--color-bg);
-  font-weight: 800;
-  letter-spacing: 0.04em;
-  font-size: 0.9rem;
-  box-shadow: 0 6px 14px rgba(15, 23, 42, 0.15);
-}
-
 .brand-text {
   font-weight: 800;
   font-size: 1.1rem;
@@ -400,10 +385,6 @@ main {
   transition: background 0.4s ease, border-color 0.4s ease;
 }
 
-.card--person {
-  background: var(--color-card);
-}
-
 .card-photo {
   margin-bottom: 6px;
 }
@@ -607,11 +588,6 @@ main {
 /* ::selection — Belarusian flag colors */
 
 ::selection {
-  background: #ce1720;
-  color: #ffffff;
-}
-
-html[data-theme="dark"] ::selection {
   background: #ce1720;
   color: #ffffff;
 }
