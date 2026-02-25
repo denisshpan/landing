@@ -1,27 +1,29 @@
+const SHARED = {
+  contactEmailValue: "example@email.com",
+  contactPhoneValue: "+34 123 456 789",
+};
+
 const BASE = {
   es: {
+    ...SHARED,
     brandTitle: "Denis & Svetlana",
     aboutDenisName: "Denis, 38",
     aboutSvetlanaName: "Svetlana, 37",
     contactEmailLabel: "Email",
-    contactEmailValue: "example@email.com",
-    contactPhoneValue: "+34 123 456 789",
   },
   en: {
+    ...SHARED,
     brandTitle: "Denis & Svetlana",
     aboutDenisName: "Denis, 38",
     aboutSvetlanaName: "Svetlana, 37",
     contactEmailLabel: "Email",
-    contactEmailValue: "example@email.com",
-    contactPhoneValue: "+34 123 456 789",
   },
   be: {
+    ...SHARED,
     brandTitle: "Дзяніс & Святлана",
     aboutDenisName: "Дзяніс, 38",
     aboutSvetlanaName: "Святлана, 37",
     contactEmailLabel: "Email",
-    contactEmailValue: "example@email.com",
-    contactPhoneValue: "+34 123 456 789",
   },
 };
 
