@@ -16,7 +16,9 @@
   --color-accent-shadow: rgba(37, 99, 235, 0.4);
   --color-accent-shadow-hover: rgba(37, 99, 235, 0.6);
   --radius-xl: 32px;
-  --radius-lg: 22px;
+  --radius-lg: 24px;
+  --radius-md: 20px;
+  --radius-sm: 18px;
   --radius-pill: 999px;
   --shadow-soft: 0 24px 60px rgba(15, 23, 42, 0.12);
   --shadow-chip: 0 12px 30px rgba(15, 23, 42, 0.14);
@@ -120,7 +122,7 @@ a {
   justify-content: center;
   width: 36px;
   height: 36px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   border: 1px solid var(--color-border-subtle);
   background: var(--color-tag-bg);
   cursor: pointer;
@@ -170,14 +172,14 @@ html[data-theme="dark"] .theme-toggle__icon--dark {
 .language-toggle {
   display: inline-flex;
   padding: 3px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   background: var(--color-tag-bg);
   border: 1px solid var(--color-border-subtle);
   box-shadow: var(--shadow-chip);
 }
 
 .language-toggle__btn {
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   border: none;
   padding: 6px 14px;
   font-size: 0.75rem;
@@ -251,7 +253,7 @@ main {
   align-items: center;
   justify-content: center;
   padding: 11px 18px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   border: 1px solid transparent;
   font-size: 0.85rem;
   font-weight: 600;
@@ -287,11 +289,12 @@ main {
 .hero-media {
   display: flex;
   justify-content: flex-end;
+  position: relative;
 }
 
 .photo-placeholder {
   position: relative;
-  border-radius: 24px;
+  border-radius: var(--radius-lg);
   border: 1px solid var(--color-border-subtle);
   background: var(--color-tag-bg);
   display: flex;
@@ -309,6 +312,7 @@ main {
   aspect-ratio: 3 / 4;
   box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
   overflow: hidden;
+  cursor: default;
 }
 
 .photo-placeholder--main img {
@@ -324,16 +328,10 @@ main {
   transform: scale(1.06) translateY(-4px);
 }
 
-.photo-placeholder__label {
-  font-size: 0.8rem;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-}
-
 .section {
   margin-top: 40px;
   padding: 24px 18px 26px;
-  border-radius: 24px;
+  border-radius: var(--radius-lg);
   background: var(--color-bg-soft);
   border: 1px solid var(--color-border-subtle);
   box-shadow: var(--shadow-soft);
@@ -375,7 +373,7 @@ main {
 }
 
 .card {
-  border-radius: 20px;
+  border-radius: var(--radius-md);
   border: 1px solid var(--color-border-subtle);
   background: var(--color-card);
   padding: 12px 12px 14px;
@@ -417,7 +415,7 @@ main {
 
 .tag {
   padding: 6px 10px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   background: var(--color-tag-bg);
   border: 1px solid var(--color-tag-border);
   font-size: 0.78rem;
@@ -433,7 +431,7 @@ main {
 }
 
 .feature-card {
-  border-radius: 18px;
+  border-radius: var(--radius-sm);
   padding: 14px 14px 15px;
   border: 1px solid var(--color-border-subtle);
   background: var(--color-card);
@@ -458,7 +456,7 @@ main {
 }
 
 .benefit-card {
-  border-radius: 18px;
+  border-radius: var(--radius-sm);
   padding: 14px 13px 15px;
   border: 1px solid var(--color-border-subtle);
   background: var(--color-card);
@@ -471,7 +469,7 @@ main {
 .benefit-icon {
   width: 22px;
   height: 22px;
-  border-radius: 999px;
+  border-radius: var(--radius-pill);
   background: rgba(16, 185, 129, 0.1);
   display: inline-flex;
   align-items: center;
@@ -502,7 +500,7 @@ main {
 }
 
 .contact-main {
-  border-radius: 20px;
+  border-radius: var(--radius-md);
   padding: 14px 15px 16px;
   background: var(--color-card);
   border: 1px solid var(--color-border-subtle);
@@ -537,7 +535,7 @@ main {
 }
 
 .contact-note {
-  border-radius: 20px;
+  border-radius: var(--radius-md);
   padding: 14px 14px 15px;
   border: 1px dashed var(--color-note-border);
   background: var(--color-note-bg);
@@ -579,6 +577,7 @@ main {
 [data-animate].is-visible {
   opacity: 1;
   transform: translateY(0) scale(1);
+  will-change: auto;
 }
 
 [data-animate="fade-in"].is-visible {
@@ -593,14 +592,6 @@ main {
 }
 
 /* Photo hover tooltip */
-
-.photo-placeholder--main {
-  cursor: default;
-}
-
-.hero-media {
-  position: relative;
-}
 
 .photo-tooltip {
   position: absolute;

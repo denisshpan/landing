@@ -5,6 +5,15 @@ function getCurrentTheme() {
   return document.documentElement.getAttribute("data-theme") || "light";
 }
 
+let i18nElements = null;
+
+function getI18nElements() {
+  if (!i18nElements) {
+    i18nElements = document.querySelectorAll("[data-i18n-key]");
+  }
+  return i18nElements;
+}
+
 function applyLanguage(lang) {
   const theme = getCurrentTheme();
   const dictionary = TRANSLATIONS[theme]?.[lang] || TRANSLATIONS.light[lang];
@@ -12,7 +21,7 @@ function applyLanguage(lang) {
 
   document.documentElement.lang = lang;
 
-  const elements = document.querySelectorAll("[data-i18n-key]");
+  const elements = getI18nElements();
   elements.forEach((el) => {
     const key = el.getAttribute("data-i18n-key");
     const value = dictionary[key];
@@ -168,12 +177,24 @@ function setupTabEasterEgg() {
   const originalTitle = document.title;
   let returned = false;
 
+  const hiddenTexts = {
+    es: "¡Vuelve! Aún no tenemos piso...",
+    en: "Come back! We still don't have a flat...",
+    be: "Вярніся! Мы яшчэ без кватэры...",
+  };
+  const returnTexts = {
+    es: "¡Has vuelto! ❤",
+    en: "You're back! ❤",
+    be: "Вярнуўся! ❤",
+  };
+
   document.addEventListener("visibilitychange", () => {
+    const lang = getCurrentLanguage();
     if (document.hidden) {
-      document.title = "Vuelve! Aún no tenemos piso...";
+      document.title = hiddenTexts[lang] || hiddenTexts.es;
       returned = false;
     } else if (!returned) {
-      document.title = "¡Has vuelto! ❤";
+      document.title = returnTexts[lang] || returnTexts.es;
       returned = true;
       setTimeout(() => {
         document.title = originalTitle;
@@ -317,6 +338,8 @@ function setupKeyboardEasterEggs() {
 function triggerConfetti() {
   const colors = ["#ce1720", "#ffffff", "#3b82f6", "#f59e0b", "#10b981", "#8b5cf6"];
   const count = 60;
+  const fragment = document.createDocumentFragment();
+  const pieces = [];
 
   for (let i = 0; i < count; i++) {
     const piece = document.createElement("div");
@@ -328,9 +351,11 @@ function triggerConfetti() {
     piece.style.animationDuration = 1.2 + Math.random() * 1.2 + "s";
     piece.style.width = 6 + Math.random() * 6 + "px";
     piece.style.height = 6 + Math.random() * 6 + "px";
-    document.body.appendChild(piece);
-    setTimeout(() => piece.remove(), 3000);
+    fragment.appendChild(piece);
+    pieces.push(piece);
   }
+  document.body.appendChild(fragment);
+  setTimeout(() => pieces.forEach((p) => p.remove()), 3000);
 
   const banner = document.getElementById("confettiBanner");
   if (banner) {
